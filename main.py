@@ -1,6 +1,8 @@
 from pathlib import Path
 import shutil
 
+
+# 1
 arquivos_importantes = Path("arquivos_importantes")
 
 if not arquivos_importantes.exists():
@@ -21,17 +23,35 @@ if not arquivos_importantes.exists():
 # backup_arquivos = Path("backup_arquivos")
 # shutil.copytree(arquivos_importantes, backup_arquivos)
 
-relatorio = Path("relatorio.txt")
 
-if not relatorio.exists():
-    relatorio.touch(exist_ok=True)
 
-relatorios_antigos = Path("relatorios_antigos")
+# 2
+# relatorio = Path("relatorio.txt")
 
-if not relatorios_antigos.exists():
-    relatorios_antigos.mkdir(exist_ok=True)
+# if not relatorio.exists():
+#     relatorio.touch(exist_ok=True)
 
-shutil.move(relatorio, relatorios_antigos / "backup_relatorio.txt")
+# relatorios_antigos = Path("relatorios_antigos")
+
+# if not relatorios_antigos.exists():
+#     relatorios_antigos.mkdir(exist_ok=True)
+
+# shutil.move(relatorio, relatorios_antigos / "backup_relatorio.txt")
+
+
+# 3
+# shutil.make_archive("backup/backup_arquivos", "zip", "arquivos_importantes")
+
+
+# 4
+shutil.unpack_archive("backup/backup_arquivos.zip", "extraido")
+
+Path.
+
+
+
+
+
 
 
 
