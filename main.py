@@ -44,17 +44,7 @@ if not arquivos_importantes.exists():
 
 
 # 4
-shutil.unpack_archive("backup/backup_arquivos.zip", "extraido")
+# shutil.unpack_archive("backup/backup_arquivos.zip", "extraido")
 
-Path.
-
-
-
-
-
-
-
-
-
-
-
+# for arquivo in Path("extraido").glob("*"):
+#     print(arquivo.stem)
